@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Form 1</title>
+	<meta charset="utf-8">
+	<style>
+		div.registry {
+			width: 700px;
+			margin: 10px auto;
+		}
+		
+		.registry img {
+			float: left;
+		}
+		.registry h1 {
+			color: #ca3438;
+			font-weight: normal;
+			font-size: 1.8em;
+		}
+		
+		div.registry {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 0.8em;
+			width: 90%;
+			margin: 10px auto;
+		}
+			
+		table {
+			width: 100%;			
+			border-collapse: collapse;
+			margin-top: 2em;
+		}
+		th, td {
+			border: 1px solid white;
+			text-align: center;
+			font-weight: bold;
+		}
+		th {
+			background-color: #ca3438; 
+			color:white; 
+			padding: 0.5em 1em;
+		}
+		td {
+			background-color: #e6e6e6;
+			color:black;
+			padding: 0.5em 1.5em;
+		}
+		
+		th:first-child, td:first-child {
+			padding: 0.8em 5em;
+		}
+		
+		.ykien p {
+			font-weight: bold;
+			border-bottom: 2px solid #e6e6e6;
+			padding-bottom: 0.8em;
+			margin-bottom: 1.25em;
+		}
+		
+		.ykien form {
+			margin: 2em 0 1em 0;
+			border-bottom: 2px solid #e6e6e6;
+		}
+		
+		.ykien label {
+			width: 7em;
+			float:left;
+			text-align: left;
+			padding: 0.5em 0 0.4em;
+		}
+		
+		.ykien input, textarea {
+			padding: 0.3em 0.2em 0.5em 0.2em;
+			width: 100%;
+			border: 2px solid #e6e6e6;
+		}
+		
+		.ykien span {
+			color: red;	
+		}
+		
+		.ykien div.fm {
+			margin-left: 7em;
+			margin-right: 0.7em;
+		}
+		
+		.ykien div.fm input[name="info"] {
+			width: 50%;
+		}
+		
+		.ykien textarea {
+			height: 6em;
+		}
+	</style>
+</head>
+<body>
+<div class="registry">
+
+<div class="lichlamviec">
+<img src="images/lichlamviec.png" alt="icon">
+<h1>Lịch Làm Việc</h1>
+</div>
+
+<div class="ykien">
+<img src="images/ykien.png" alt="icon">
+<h1>Ý Kiến/Yêu Cầu</h1>
+
+<form name="ykien" method="post" action="ykien.php">
+<p>Thông tin về người gửi:</p>
+	<label for="hoten">Họ tên:<span>*</span></label>
+	<div class="fm"><input type="text" name="info" id="hoten" required></div>
+	
+	<p>Thông tin góp ý:</p>
+	<label for="tieude">Tiêu đề:<span>*</span></label>
+	<div class="fm"><input type="text" name="subject" id="tieude" required></div><br>
+	
+	<label for="noidung">Nội dung:<span>*</span></label>
+	<div class="fm"><textarea name="content" id="noidung"></textarea required></div><br>
+	
+	<input type="submit" name="submit" value="GỬI GÓP Ý">
+</form>
+</div>
+</div>
+</body>
+</html>

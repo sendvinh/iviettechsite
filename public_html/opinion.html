@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Góp ý - iViettech</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Lập trình viên, Lập trình Java, Lập trình .Net, Lập trình Web, PHP, MySQL, Lập trình di động, Android, iOS, mobile, tester, Kiểm thử phần mềm, thiết kế phần mềm, kỹ sư cầu nối, da nang, đà nẵng, học lập trình tại đà nẵng, hoc lap trinh tai da nang, nơi tốt nhất học lập trình tại đà nẵng, trung tâm đào tạo lập trình tại đà nẵng, đào tạo lập trình viên tại đà nẵng, việc làm CNTT tại đà nẵng, dạy lập trình tại đà nẵng">
+	<meta name="description" content="iViettech với sứ mệnh là cầu nối giữa nhà trường và doanh nghiệp. Mục tiêu chính của iViettech là giúp các bạn trẻ yêu thích CNTT tìm kiếm việc làm trong ngành phần mềm. iViettech thường xuyên khai giảng các khóa học lập trình tại Đà nẵng như Java, .Net, iOS, Android, PHP và Tester.">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<style>
+		@font-face {
+			font-family: Roboto;
+			src: url: ("font/Roboto-Regular.ttf");
+		}
+	
+		.wideregistry {
+			width: 100%;
+			height: 600px;
+		}
+	
+		div.containregistry {
+			width: 1000px;
+			height: 560px;
+			margin: 20px auto;
+		}
+	
+		div.registry {
+			width: 650px;
+			float: left;
+			margin: 10px auto;
+			padding-right: 20px;
+			font-family: 'Roboto', sans-serif;
+		}
+		
+		.registry img {
+			float: left;
+		}
+		
+		.registry h1 {
+			color: #ca3438;
+			font-weight: normal;
+			font-size: 1.8em;
+		}
+		
+		.registry h1#first {
+			margin-top: 0;
+		}
+		
+		.lichlamviec, .ykien{
+			font-size: 0.8em;
+			width: 100%;
+			margin: 0;
+		}
+		
+		.lichlamviec table {
+			width: 100%;			
+			border-collapse: collapse;
+			margin-top: 2em;
+		}
+		.lichlamviec th, .lichlamviec td {
+			border: 1px solid white;
+			text-align: center;
+			font-weight: bold;
+		}
+		.lichlamviec th {
+			background-color: #ca3438; 
+			color:white; 
+			padding: 0.5em 1em;
+		}
+		.lichlamviec td {
+			background-color: #e6e6e6;
+			color:black;
+			padding: 0.5em 1.5em;
+		}
+		
+		.lichlamviec th:first-child, .lichlamviec td:first-child {
+			padding: 0.8em 5em;
+		}
+		
+		.ykien p {
+			font-weight: bold;
+			border-bottom: 2px solid #e6e6e6;
+			padding-bottom: 0.8em;
+			margin-bottom: 1.25em;
+		}
+		
+		.ykien form {
+			margin: 2em 0 1em 0;
+			border-bottom: 2px solid #e6e6e6;
+		}
+		
+		.ykien label {
+			width: 7em;
+			float:left;
+			text-align: left;
+			padding: 0.5em 0 0.4em;
+		}
+		
+		.ykien input, .ykien textarea {
+			padding: 0.3em 0.2em 0.5em 0.2em;
+			width: 100%;
+			border: 2px solid #e6e6e6;
+		}
+		
+		.ykien span {
+			color: red;	
+		}
+		
+		.ykien div.fm {
+			margin-left: 7em;
+			margin-right: 0.7em;
+		}
+		
+		.ykien div.fm input[name="info"] {
+			width: 50%;
+		}
+		
+		.ykien textarea {
+			height: 6em;
+		}
+		
+		.ykien input.submit {
+			width: 8em;
+			font-weight: bold;
+			margin-top: 1.25em;
+			padding: 0.75em 1em;
+			border: 1px solid #ca3438;
+			border-radius: 2px;
+			color: #fff;
+			background-color: #ca3438;
+			float: right;
+		}
+		
+		.ykien input.submit:hover {
+			background: linear-gradient(to bottom, #ad0001 0%,#c60024 100%);
+		}
+		
+			.containtuvan {
+				width: 280px;
+				margin: 10px 0 10px 30px;
+				float: left;
+			}
+	
+			.tuvan {
+				width: 90%;
+				padding: 20px 15px 25px;
+				border: 1px dashed #e62e2f;
+			}
+			
+			.tuvan img[src="images/tuvan.jpg"] {
+				display: block;
+				border-radius: 50%;
+				width: 137px;
+				height: 137px;
+				margin: 0 auto;
+				padding: 5px;
+				box-shadow: 0px 5px 10px grey;
+			}
+			
+			.tuvan h3 {
+				font-family: 'Roboto', sans-serif;
+				font-size: 24px;
+				color: #ca3438;
+				font-weight: normal;
+				text-transform: capitalize;
+				line-height: 31px;
+				padding: 10px 0 7px;
+				text-align: center;
+				margin: 0;
+			}
+			
+			.tuvan .connect {
+				width: 100%;
+				clear: both;
+				list-style: none;
+				margin: 0 auto;
+				padding: 0;
+				display: block;
+				text-align: center;
+			}
+			
+			.tuvan ul#cn1 {
+				padding: 8px 0 5px;
+			}
+			
+			.tuvan ul#cn2 {
+				padding-top: 10px;
+			}
+			
+			.tuvan .connect li {
+				display: inline-block;
+			}
+			
+			.tuvan img.connect1 {
+				width: 40px;
+				height: 40px;
+				margin: 0 9px; 
+			}
+			
+			.tuvan img.connect2 {
+				width: 30px;
+				height: 31px;
+				margin: 0 4px;
+			}
+			
+			.buttontuvan {
+				width: 101%;
+				margin-top: 10px;
+			}
+			
+			.buttontuvan a {
+				background-color: #fea61a;
+				display: block;
+				padding: 12px;
+				font-size: 14px;
+				text-transform: uppercase;
+				font-weight: bold;
+				color: #fff;
+				text-align: center;
+				text-decoration: none;
+			}
+			
+			.buttontuvan a:hover {
+				background-color: #f89800;
+			}
+		
+	</style>
+</head>
+<body>
+<header>
+	<div class="homeheader">
+	<a href="home.html"><img src="images/logo.png" alt="logo"></a>
+	<ul class="nav">
+		<li>
+		<a href="home.html">
+		<p>Trang chủ</p>
+		<img src="images/drop.png" alt="dropicon">
+		</a>
+		</li>
+	
+		<li>
+		<a href="#2">
+		<p>Các khóa học lập trình</p>
+		<img src="images/drop.png" alt="dropicon">
+		</a>
+		</li>
+	
+		<li>
+		<a href="registry.html">
+		<p>Đăng ký học</p>
+		<img src="images/drop.png" alt="dropicon">
+		</a>
+		</li>
+	
+		<li>
+		<a href="course.html">
+		<p>Việc làm</p>
+		<img src="images/drop.png" alt="dropicon">
+		</a>
+		</li>
+	
+		<li>
+		<a href="info.html">
+		<p>iViettech</p>
+		<img src="images/drop.png" alt="dropicon">
+		</a>
+		</li>
+	
+		<li>
+		<a href="#6">
+		<p>Trang vàng học viên</p>
+		<img src="images/drop.png" alt="dropicon">
+		</a>
+		</li>
+	
+		<li>	
+		<a href="opinion.html">
+		<p>Góp ý</p>
+		<img src="images/drop.png" alt="dropicon">
+		</a>
+		</li>
+
+	</ul>
+	</div>
+</header>
+	
+<main>	
+	<div class="wideregistry">
+	<div class="containregistry">
+		<div class="registry">
+		
+			<div class="lichlamviec">
+			<img src="images/lichlamviec.png" alt="icon">
+			<h1 id="first">Lịch Làm Việc</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>LỊCH LÀM VIỆC</th>
+						<th>SÁNG</th>
+						<th>CHIỀU</th>
+						<th>TỐI</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td>Thứ 2-7 </td>
+						<td>7:30 - 11:30</td>
+						<td>13:30 - 17:30</td>
+						<td>17:30 - 21:00</td>
+					</tr>
+					
+					<tr>
+						<td>Chủ nhật</td>
+						<td>7:30 - 11:30</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+
+			<div class="ykien">
+			<img src="images/ykien.png" alt="icon">
+			<h1>Ý Kiến/Yêu Cầu</h1>
+			<form name="ykien" method="post" action="ykien.php">
+			<p>Thông tin về người gửi:</p>
+			<label for="hoten">Họ tên:<span>*</span></label>
+			<div class="fm"><input type="text" name="info" id="hoten" required></div>
+				
+			<p>Thông tin góp ý:</p>
+			<label for="tieude">Tiêu đề:<span>*</span></label>
+			<div class="fm"><input type="text" name="subject" id="tieude" required></div><br>
+				
+			<label for="noidung">Nội dung:<span>*</span></label>
+			<div class="fm"><textarea name="content" id="noidung" required></textarea></div>
+			<br>	
+			<input class="submit" type="submit" name="submit" value="GỬI GÓP Ý">
+			</form>
+			</div>
+		</div>
+		
+	<div class="containtuvan">
+	<div class="tuvan">
+		<img src="images/tuvan.jpg" alt="image">
+		<h3>Hỏi Tư Vấn Viên</h3>
+
+		<ul class="connect" id="cn1">
+			<li><a href=""><img class="connect1" src="images/__skype.png" title="iviettech"></a></li>
+			<li><a href=""><img class="connect1" src="images/__yahoo.png" title="iviettech"></a></li>
+			<li><a href=""><img class="connect1" src="images/__tel.png" title="02363-888-279"></a></li>
+		</ul>
+
+		<ul class="connect" id="cn2">
+			<li><a href=""><img class="connect2" src="images/__facebook.png"></a></li>
+			<li><a href=""><img class="connect2"src="images/__googleplus.png"></a></li>
+			<li><a href=""><img class="connect2" src="images/__twitter.png"></a></li>
+			<li><a href=""><img class="connect2" src="images/__youtube.png"></a></li>
+			<li><a href=""><img class="connect2" src="images/__square.png"></a></li>
+			<li><a href=""><img class="connect2" src="images/__twitter2.png"></a></li>
+		</ul>
+
+	</div>
+	
+	<div class="buttontuvan">
+		<a href="#ky">
+		<img src="images/rightarrow.png" alt="icon">&nbsp;
+		ĐĂNG KÝ HỌC
+		</a>
+	</div>
+	</div>
+		
+	</div>
+	</div>
+</main>	
+	
+<footer>
+<div class="containfooter">
+	<div class="ft1">
+		<p><b>Địa chỉ :</b> 92 Quang Trung, Q. Hải Châu, TP. Đà Nẵng - Điện thoại : 02363 888 279</p>
+		<p><b>Email :</b> contact@iviettech.vn</p>
+	</div>
+	<p class="ft2">Bản quyền thuộc về iViettech</p>
+</div>
+</footer>
+</body>
+</html>

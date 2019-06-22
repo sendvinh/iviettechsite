@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Trang thông tin việc làm CNTT tại Đà Nẵng - iViettech</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Lập trình viên, Lập trình Java, Lập trình .Net, Lập trình Web, PHP, MySQL, Lập trình di động, Android, iOS, mobile, tester, Kiểm thử phần mềm, thiết kế phần mềm, kỹ sư cầu nối, da nang, đà nẵng, học lập trình tại đà nẵng, hoc lap trinh tai da nang, nơi tốt nhất học lập trình tại đà nẵng, trung tâm đào tạo lập trình tại đà nẵng, đào tạo lập trình viên tại đà nẵng, việc làm CNTT tại đà nẵng, dạy lập trình tại đà nẵng">
+	<meta name="description" content="iViettech với sứ mệnh là cầu nối giữa nhà trường và doanh nghiệp. Mục tiêu chính của iViettech là giúp các bạn trẻ yêu thích CNTT tìm kiếm việc làm trong ngành phần mềm. iViettech thường xuyên khai giảng các khóa học lập trình tại Đà nẵng như Java, .Net, iOS, Android, PHP và Tester.">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<style>
+		@font-face {
+			font-family: Roboto;
+			src: url: ("font/Roboto-Regular.ttf");
+		}
+		
+		.widecourse {
+			width: 100%;
+			height: 740px;
+		}
+	
+		div.containcourse {
+			width: 1000px;
+			height: 700px;
+			margin: 20px auto;
+		}
+	
+		div.course {
+			width: 650px;
+			float: left;
+			margin: 10px auto;
+			padding-right: 20px;
+			font-family: 'Roboto', sans-serif;
+		}
+		
+		.part1 {
+			height: 2.8em;
+		}
+		
+		.part1 span.ico {
+		display: block;
+		float: left;
+		background-color: #ca3438;
+		background-image: url("images/tuyendung.png");
+		width: 35px;
+		height: 35px;
+		border-radius: 100%;
+		margin-right: 1.25em;
+		}
+		
+		.part1 h1 {
+			font-weight: normal;
+			color: #ca3438;
+			font-size: 1.5em;
+			margin: 0 0.3em;
+			float: left;
+		}
+		
+		.part1 img {
+			float: right;
+		}
+		
+		
+		ul.part2, .part2 ol, .part2 li {display: block;}
+		
+		.part2 {
+			font-size: 0.9em;
+			width: 100%;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		.part2 > li {
+			width: 100%;
+			height: 15em;
+		}
+		
+		.part2 li ol {
+			width: 100%;
+			list-style-type: none;
+			padding: 1em 0;
+			clear: both;
+			height: 13em;
+			border-top: 3px dotted #e6e6e6;
+		}
+		
+		.part2 ol li {
+			float: left;
+			width: 49%;
+		}
+		
+		.part2 ol li img.compic {
+			width: 50px;
+			height: 45px;
+			margin-right: 10px;
+			float: left;
+		}
+		
+		.part2 ol li div.info {
+			width: 80%;
+			float: left;
+		}
+		
+		.part2 h2, .part2 h3, .part2 p {
+			font-size: 1em;
+			margin: 0;
+			clear: both;
+		}
+		
+		.part2 img[src="images/date.png"] {
+			float: left;
+			margin: 0.1em 0;
+		}
+		
+		.part2 h2 {
+			margin: 0.25em 0;
+			color: black;
+		}
+		
+		.part2 h3 {
+			color: #ca3438;
+			line-height: 1.25em;
+		}
+		
+		.part2 p {
+			line-height: 1.5em;
+		}
+		
+		.part2 p.date {
+			float: left;
+			clear: none;
+			color: #cccccc;
+			line-height: 1.25em;
+			margin: 0.1em 0;
+		}
+		
+		.part2 a {
+			text-decoration: none;
+		}
+		
+			.containtuvan {
+				width: 280px;
+				margin: 10px 0 10px 30px;
+				float: left;
+			}
+	
+			.tuvan {
+				width: 90%;
+				padding: 20px 15px 25px;
+				border: 1px dashed #e62e2f;
+			}
+			
+			.tuvan img[src="images/tuvan.jpg"] {
+				display: block;
+				border-radius: 50%;
+				width: 137px;
+				height: 137px;
+				margin: 0 auto;
+				padding: 5px;
+				box-shadow: 0px 5px 10px grey;
+			}
+			
+			.tuvan h3 {
+				font-family: 'Roboto', sans-serif;
+				font-size: 24px;
+				color: #ca3438;
+				font-weight: normal;
+				text-transform: capitalize;
+				line-height: 31px;
+				padding: 10px 0 7px;
+				text-align: center;
+				margin: 0;
+			}
+			
+			.tuvan .connect {
+				width: 100%;
+				clear: both;
+				list-style: none;
+				margin: 0 auto;
+				padding: 0;
+				display: block;
+				text-align: center;
+			}
+			
+			.tuvan ul#cn1 {
+				padding: 8px 0 5px;
+			}
+			
+			.tuvan ul#cn2 {
+				padding-top: 10px;
+			}
+			
+			.tuvan .connect li {
+				display: inline-block;
+			}
+			
+			.tuvan img.connect1 {
+				width: 40px;
+				height: 40px;
+				margin: 0 9px; 
+			}
+			
+			.tuvan img.connect2 {
+				width: 30px;
+				height: 31px;
+				margin: 0 4px;
+			}
+			
+			.buttontuvan {
+				width: 101%;
+				margin-top: 10px;
+			}
+			
+			.buttontuvan a {
+				background-color: #fea61a;
+				display: block;
+				padding: 12px;
+				font-size: 14px;
+				text-transform: uppercase;
+				font-weight: bold;
+				color: #fff;
+				text-align: center;
+				text-decoration: none;
+			}
+			
+			.buttontuvan a:hover {
+				background-color: #f89800;
+			}
+		
+	</style>
+</head>
+<body>
+
+<header>
+	<div class="homeheader">
+	<a href="home.html"><img src="images/logo.png" alt="logo"></a>
+	<ul class="nav">
+		<li>
+		<a href="home.html">
+		<p>Trang chủ</p>
+		<img src="images/drop.png" alt="dropicon">
+		</a>
+		</li>
+	
+		<li>
+		<a href="#2">
+		<p>Các khóa học lập trình</p>
+		<img src="images/drop.png" alt="dropicon">
+		</a>
+		</li>
+	
+		<li>
+		<a href="registry.html">
+		<p>Đăng ký học</p>
+		<img src="images/drop.png" alt="dropicon">
+		</a>
+		</li>
+	
+		<li>
+		<a href="course.html">
+		<p>Việc làm</p>
+		<img src="images/drop.png" alt="dropicon">
+		</a>
+		</li>
+	
+		<li>
+		<a href="info.html">
+		<p>iViettech</p>
+		<img src="images/drop.png" alt="dropicon">
+		</a>
+		</li>
+	
+		<li>
+		<a href="#6">
+		<p>Trang vàng học viên</p>
+		<img src="images/drop.png" alt="dropicon">
+		</a>
+		</li>
+	
+		<li>	
+		<a href="opinion.html">
+		<p>Góp ý</p>
+		<img src="images/drop.png" alt="dropicon">
+		</a>
+		</li>
+
+	</ul>
+	</div>
+</header>
+
+
+<main>
+	<div class="widecourse">
+	<div class="containcourse">
+	<div class="course">
+	<div class="part1">
+	<span class="ico"></span>
+	<h1>Tin tuyển dụng</h1>
+	<a href="#r"><img src="images/right.png" alt="icon"></a>
+	<img src="images/x.png" alt="x">
+	<a href="#l"><img src="images/left.png" alt="icon"></a>
+
+	</div>
+
+	<ul class="part2">
+		<li>
+		<ol>
+			<li>
+			<a href="#elisoft"><img class="compic" src="images/elisoft.jpg" alt="pic"></a>
+			<div class="info">
+			<a href="#elisoft"><h2>Công ty: Elisoft</h2></a>
+			<a href="#elisoft"><h3>Tuyển Senior PHP developer (symfony, Yii, Lavarel Experiences)</h3></a>
+			<img src="images/date.png">
+			<p class="date">Tuesday, 08/03/2016</p>
+			<p>Bạn Nên Có Kỹ Năng Javascript/Jquery/ajax, CSS, Xml, Html, CMS MySQL, PHP developer. Bạn sẽ làm gì - Developing customer and company own websites...</p>
+			</div>
+			</li>
+			
+			<li>
+			<a href="#softflight"><img class="compic" src="images/softflight.jpg" alt="pic"></a>
+			<div class="info">
+			<a href="#softflight"><h2>Công ty: Soft Flight CO.,LTD</h2></a>
+			<a href="#softflight"><h3>Tuyển Web Developer (Php, Ruby, Linux, MySQL, Javascript, CSS)</h3></a>
+			<img src="images/date.png">
+			<p class="date">Tuesday, 08/03/2016</p>
+			<p>Bạn Nên Có Kỹ Năng Software Developer IT English or Japanese. Bạn sẽ làm gì: - Có thể cử đi công tác TP. Hồ Chí Minh ...</p>
+			</div>
+			</li>
+		</ol>
+		</li>
+		
+		<li>
+		<ol>
+			<li>
+			<a href="#mgm"><img class="compic" src="images/mgm.jpg" alt="pic"></a>
+			<div class="info">
+			<a href="#mgm"><h2>Công ty: Mgm Technology Partners</h2></a>
+			<a href="#mgm"><h3>Tuyển 10 Senior Java Developers - Urgent!!</h3></a>
+			<img src="images/date.png">
+			<p class="date">Tuesday, 08/03/2016</p>
+			<p>Bạn sẽ làm gì Your task - Work on projects for our international customers within an international team together with colleagues from our German, Czech and French ...</p>
+			</div>
+			</li>
+			
+			<li>
+			<a href="#dsd"><img class="compic" src="images/dsd.jpg" alt="pic"></a>
+			<div class="info">
+			<a href="#dsd"><h2>Công ty: Công Ty TNHH DSD VIỆT</h2></a>
+			<a href="#dsd"><h3>Tuyển 02 Nhân Viên Lập Trình HTML, WordPress</h3></a>
+			<img src="images/date.png">
+			<p class="date">Tuesday, 08/03/2016</p>
+			<p>Mô tả công việc - Code xây dựng các website cho khách hàng của http://dsdviet.com - Lập trình website chuyên nghiệp với PHP & MySQL, WordPress - Đã code nhiều ...</p>
+			</div>
+			</li>
+		</ol>
+		</li>
+		
+		<li>
+		<ol>
+			<li>
+			<a href="#elisoft"><img class="compic" src="images/elisoft.jpg" alt="pic"></a>
+			<div class="info">
+			<a href="#elisoft"><h2>Công ty: Elisoft</h2></a>
+			<a href="#elisoft"><h3>Tuyển Senior PHP developer (symfony, Yii, Lavarel Experiences)</h3></a>
+			<img src="images/date.png">
+			<p class="date">Tuesday, 08/03/2016</p>
+			<p>Bạn Nên Có Kỹ Năng Javascript/Jquery/ajax, CSS, Xml, Html, CMS MySQL, PHP developer. Bạn sẽ làm gì - Developing customer and company own websites...</p>
+			</div>
+			</li>
+			
+			<li>
+			<a href="#softflight"><img class="compic" src="images/softflight.jpg" alt="pic"></a>
+			<div class="info">
+			<a href="#softflight"><h2>Công ty: Soft Flight CO.,LTD</h2></a>
+			<a href="#softflight"><h3>Tuyển Web Developer (Php, Ruby, Linux, MySQL, Javascript, CSS)</h3></a>
+			<img src="images/date.png">
+			<p class="date">Tuesday, 08/03/2016</p>
+			<p>Bạn Nên Có Kỹ Năng Software Developer IT English or Japanese. Bạn sẽ làm gì: - Có thể cử đi công tác TP. Hồ Chí Minh ...</p>
+			</div>
+			</li>
+		</ol>
+		</li>
+	</ul>
+	</div>
+	
+	<div class="containtuvan">
+	<div class="tuvan">
+		<img src="images/tuvan.jpg" alt="image">
+		<h3>Hỏi Tư Vấn Viên</h3>
+
+		<ul class="connect" id="cn1">
+			<li><a href=""><img class="connect1" src="images/__skype.png" title="iviettech"></a></li>
+			<li><a href=""><img class="connect1" src="images/__yahoo.png" title="iviettech"></a></li>
+			<li><a href=""><img class="connect1" src="images/__tel.png" title="02363-888-279"></a></li>
+		</ul>
+
+		<ul class="connect" id="cn2">
+			<li><a href=""><img class="connect2" src="images/__facebook.png"></a></li>
+			<li><a href=""><img class="connect2"src="images/__googleplus.png"></a></li>
+			<li><a href=""><img class="connect2" src="images/__twitter.png"></a></li>
+			<li><a href=""><img class="connect2" src="images/__youtube.png"></a></li>
+			<li><a href=""><img class="connect2" src="images/__square.png"></a></li>
+			<li><a href=""><img class="connect2" src="images/__twitter2.png"></a></li>
+		</ul>
+
+	</div>
+	
+	<div class="buttontuvan">
+		<a href="#ky">
+		<img src="images/rightarrow.png" alt="icon">&nbsp;
+		ĐĂNG KÝ HỌC
+		</a>
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	
+	<footer>
+	<div class="containfooter">
+		<div class="ft1">
+			<p><b>Địa chỉ :</b> 92 Quang Trung, Q. Hải Châu, TP. Đà Nẵng - Điện thoại : 02363 888 279</p>
+			<p><b>Email :</b> contact@iviettech.vn</p>
+		</div>
+		<p class="ft2">Bản quyền thuộc về iViettech</p>
+	</div>
+	</footer>
+</body>
+</html>

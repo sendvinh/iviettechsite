@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Đăng ký khóa học - Hội thảo - iViettech - iViettech</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Lập trình viên, Lập trình Java, Lập trình .Net, Lập trình Web, PHP, MySQL, Lập trình di động, Android, iOS, mobile, tester, Kiểm thử phần mềm, thiết kế phần mềm, kỹ sư cầu nối, da nang, đà nẵng, học lập trình tại đà nẵng, hoc lap trinh tai da nang, nơi tốt nhất học lập trình tại đà nẵng, trung tâm đào tạo lập trình tại đà nẵng, đào tạo lập trình viên tại đà nẵng, việc làm CNTT tại đà nẵng, dạy lập trình tại đà nẵng">
+	<meta name="description" content="iViettech với sứ mệnh là cầu nối giữa nhà trường và doanh nghiệp. Mục tiêu chính của iViettech là giúp các bạn trẻ yêu thích CNTT tìm kiếm việc làm trong ngành phần mềm. iViettech thường xuyên khai giảng các khóa học lập trình tại Đà nẵng như Java, .Net, iOS, Android, PHP và Tester.">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<style>
+	
+		div.dangky {
+			width: 650px;
+			float: left;
+			margin: 10px auto;
+			padding-right: 20px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		.dangky span.ico {
+			display: block;
+			float: left;
+			background-color: #ca3438;
+			background-image: url("images/pen.png");
+			width: 40px;
+			height: 40px;
+			border-radius: 100%;
+			margin-right: 1.25em;
+		}
+		
+	
+		.dangky h2 {
+			font-family: 'Roboto', sans-serif;
+			color: #ca3438;
+			line-height: 35px;
+			padding-bottom: 10px;
+			<!--border-bottom: 1px solid #dadada;-->
+		}
+		
+		.dangky a {text-decoration: none;}
+
+		.dangky label {
+			display: block;
+			width: 90px;
+			text-align: right;
+			padding-left: 20px;
+		}
+		
+		.dangky input, .dangky select, .dangky textarea {
+			margin-left: 110px;
+			float: left;
+			margin-bottom: 15px;
+			margin-top: 2px;
+		}
+		
+		.dangky input {
+			border-width: 2.2px;
+			border-style: inset;
+			width: 50%;
+			padding: 0.3em 0.5em;
+		}
+		
+		.dangky div.sp {margin-left: 110px;}
+		.dangky select {
+			margin-left: 0;
+			width: 100%;
+			padding: 0.3em 0.6em;
+		}
+		
+		.dangky textarea {
+			margin-left: 0;
+			width: 99%;
+			height: 7em;
+		}
+		
+		.dangky div.foot {
+			border-top: 1px solid #dadada;
+			padding-top: 10px;
+		}
+		
+		.dangky .submit {
+			font-size: 14px;
+			width: auto;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 12px 16px;
+			border: 0px;
+			color: #fff;
+			background-color: #c60024;
+			float: right;
+		}
+		
+		.dangky .submit:hover {
+			background: linear-gradient(to bottom, #ad0001 0%,#c60024 100%);
+		}
+	</style>
+</head>
+
+<body>
+<div class="dangky">
+	<div class="dangkyhead">
+	<span class="ico"></span>
+	<h2>Đăng ký khóa học</h2>
+	</div>
+	
+	<form name="register" method="post" action="register.php">
+		<label for="name">Họ tên:<span>*</span></label>
+		<input type="text" name="name" id="name" required autofocus><br>
+
+		<label for="mail">Email:<span>*</span></label>
+		<input type="email" name="email" id="mail" required><br>
+
+		<label for="tel">Điện thoại:<span>*</span></label>
+		<input type="tel" name="tel" id="tel" required><br>
+
+		<label for="course">Chương trình học:<span>*</span></label>
+		<div class="sp">
+			<select name="course" id="course" required>
+				<option value="" disabled selected>Chọn khóa học</option>
+				<option value="android">Lập trình Android</option>
+				<option value="ios">Lập trình iOS-Swift</option>
+				<option value="php">Lập trình PHP & MySQL</option>
+				<option value="tester">Kiểm thử chuyên nghiệp</option>
+				<option value="java">Lập trình Java từ A-Z</option>
+				<option value="net">Lập trình .Net từ A-Z</option>
+				<option value="pro">Lập trình viên chuyên nghiệp</option>
+				<option value="javahurry">Lập trình Java - Cấp tốc</option>
+				<option value="phphurry">Lập trình PHP - Cấp tốc</option>
+				<option value="basic">Lập trình cơ bản</option>
+				<option value="web">Thiết kế Web</option>
+				<option value="frontend">Lập trình Front End</option>
+				<option value="testmanual">Kiểm thử cơ bản - Manual</option>
+				<option value="testauto">Kiểm thử tự động - Automation</option>
+			</select>
+		</div><br>
+		
+		<label for="content">Nội dung:<span>*</span></label>
+		<div class="sp">
+		<textarea name="content" id="content" required></textarea>
+		</div>
+		<br><br><br><br><br><br><br><br>
+	
+		<div class="foot">
+		<input class="submit" type="submit" name="submit" value="ĐĂNG KÝ">
+		</div>
+	</form>
+</div>
+</body>
+</html>
